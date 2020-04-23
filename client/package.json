@@ -1,15 +1,22 @@
 {
-  "name": "contacts_vue_graphql",
+  "name": "client",
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
+    "start": "vue-cli-service serve",
+    "build": "vue-cli-service build && mv build ../public",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
+    "apollo-boost": "^0.4.7",
+    "concurrently": "^5.1.0",
     "core-js": "^3.6.4",
-    "vue": "^2.6.11"
+    "graphql": "^15.0.0",
+    "graphql-tag": "^2.10.3",
+    "moment": "^2.24.0",
+    "vue": "^2.6.11",
+    "vue-apollo": "^3.0.3",
+    "vue-router": "^3.1.6"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.3.0",
